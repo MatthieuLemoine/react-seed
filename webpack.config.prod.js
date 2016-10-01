@@ -5,7 +5,9 @@ const defaultConfig     = require('./webpack.config');
 module.exports = Object.assign(
   defaultConfig,
   {
+    entry    : './src/index.js',
     bail     : true,
+    devtool  : 'source-map',
     debug    : false,
     profile  : false,
     pathInfo : false,
